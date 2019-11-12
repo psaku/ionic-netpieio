@@ -1,14 +1,23 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
+  <ion-navbar color="primary">
+    <ion-title text-center>
+      NetPIE Customer App
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <ion-item>
+    <ion-label>Send to Topic Name:</ion-label>
+    <ion-input [(ngModel)]="topic" value="/StoreAccount1"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Message:</ion-label>
+    <ion-input [(ngModel)]="message" value="Hello Test Message from Customer"></ion-input>
+  </ion-item>
+  <ion-item>
+    <button ion-button block round (click)="publishMessage()">Submit</button>
+  </ion-item>
+
 </ion-content>
