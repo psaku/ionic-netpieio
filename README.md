@@ -1,7 +1,7 @@
 # ionic-netpieio
 Using NetPIE in ionic 3
 
-A sample ionic 3 project for using NetPIE framework <br/>
+A sample ionic 3 project for using NetPIE platform <br/>
 ตัวอย่างการใช้งาน NetPIE กับ Ionic Version 3 <br/>
 
 <h5>สิ่งที่ต้องดำเนินการ</h5>
@@ -44,19 +44,19 @@ A sample ionic 3 project for using NetPIE framework <br/>
             alias: this.ALIAS
           });
 
-        this.microgear.on('message', (topic, msg) => {
-          console.log(msg);
-        });
+          this.microgear.on('message', (topic, msg) => {
+            console.log(msg);
+          });
 
-        this.microgear.on('connected', () => {
-          this.microgear.setAlias(this.ALIAS);
-          this.microgear.subscribe('/topic1');
+          this.microgear.on('connected', () => {
+            this.microgear.setAlias(this.ALIAS);
+            this.microgear.subscribe('/topic1');
 
-          console.log('Microgear is connected!');
+            console.log('Microgear is connected!');
 
-        });
+          });
 
-        this.microgear.connect(this.APPID);
+          this.microgear.connect(this.APPID);
       }
 
       publishMessage() {
