@@ -13,10 +13,10 @@ export class HomePage {
   topic: any;
   message: any;
   microgear: any;
-  APPID = 'IoTLabForIT';
-  KEY = 'SBZndrXldJtFy8O';
-  SECRET = 'csn4UPtetPo238xJM2LISbe2z';
-  ALIAS = 'CustomerAccount1';
+  APPID = 'ApplicationID';
+  KEY = 'AppKey';
+  SECRET = 'SecretKey';
+  ALIAS = 'AliasName';
 
   constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
     this.initNetPie();
